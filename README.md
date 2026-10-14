@@ -27,14 +27,14 @@ Type=Application
 Name=Working Hour Tracker
 Comment=Tracks daily working hours
 Exec=setsid /path/to/workinghour_tracker_folder/shell_wrapper.sh >/dev/null 2>&1 &
-Icon=ch.x29a.playitslowly
+Icon=/path/to/workinghour_tracker_folder/office-chair-svgrepo-com.svg
 Terminal=false
 Categories=Utility;
 ```
 
-This script calls the shell wrapper in the desktop launcher file and prevent bringing up the terminal window. You can choose your own icon and place the icon name after `Icon=`.
+This script calls the shell wrapper in the desktop launcher file and prevent bringing up the terminal window. You can choose your own icon and place the icon name after `Icon=`. To customise it, find a svg image file and provide the path to the file. For example, download [this office chair icon from svg repo](https://www.svgrepo.com/svg/530656/office-chair) to the folder of the scripts. The image `office-chair-svgrepo-com.svg` can be directly sourced as in the above script.
 
-As I am using the [Papirus Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme), I can browse through icon images in `/usr/share/icons/Papirus/48x48/apps/` in my file manager to find the one I like. 
+As I am using the [Papirus Icons](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme), I can browse through icon images in `/usr/share/icons/Papirus/48x48/apps/` in my file manager to find the one I like. For example, the snail icon `ch.x29a.playitslowly.svg` should be sourced as `Icon=ch.x29a.playitslowly` (without the extension).
 
 Make the desktop file executable:
 
